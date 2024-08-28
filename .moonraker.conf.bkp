@@ -88,3 +88,11 @@ virtualenv = ~/mobileraker-env
 requirements = scripts/mobileraker-requirements.txt
 install_script = scripts/install.sh
 
+[update_manager filter_monitor]
+type = git_repo
+path = ~/klipper-filter_monitor
+origin = https://github.com/blankhaus/klipper-filter_monitor.git
+managed_services = klipper moonraker
+primary_branch = main
+install_script = install.sh
+
