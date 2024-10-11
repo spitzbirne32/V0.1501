@@ -96,3 +96,29 @@ managed_services = klipper moonraker
 primary_branch = main
 install_script = install.sh
 
+[mqtt]
+address = 192.168.178.21
+port = 1883
+username = voronmqtt
+password = voron123
+enable_moonraker_api = False
+
+[sensor powermeter]
+type = mqtt
+name = Shelly 1PM
+parameter_power = 
+	units=W
+parameter_voltage = 
+	units=V
+parameter_current = 
+	units=A
+parameter_energy = 
+	units=kWh
+state_topic = shellyplus1pm-V01501/status/switch:0
+state_response_template = 
+	{% set notification = payload|fromjson %}
+	{set_result("power", notification["apower"]|float)}
+	{set_result("voltage", notification["voltage"]|float)}
+	{set_result("current", notification["current"]|float)}
+	{set_result("energy", notification["aenergy"]["total"]|float / 1000)}
+
