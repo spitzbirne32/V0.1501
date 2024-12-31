@@ -1,0 +1,28 @@
+{
+    "NightOwl": {
+        "leg5": {
+            "spool_id": "",
+            "material": "",
+            "color": "#000000",
+            "weight": 0,
+            "runout_lane": "NONE",
+            "map": "T4",
+            "index": 1,
+            "tool_loaded": false,
+            "hub_loaded": false,
+            "status": ""
+        },
+        "leg6": {
+            "spool_id": "",
+            "material": "",
+            "color": "#000000",
+            "weight": 0,
+            "runout_lane": "NONE",
+            "map": "T5",
+            "index": 2,
+            "tool_loaded": false,
+            "hub_loaded": false,
+            "status": ""
+        }
+    }
+}
