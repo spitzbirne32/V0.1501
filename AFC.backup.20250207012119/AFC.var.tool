@@ -1,5 +1,0 @@
-{
-    "extruder": {
-        "lane_loaded": ""
-    }
-}
